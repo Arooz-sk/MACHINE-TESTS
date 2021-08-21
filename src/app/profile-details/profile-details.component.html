@@ -1,0 +1,52 @@
+<div style=" display:flex;">
+
+    <div class="profileimg">
+        <img style="width:310px; height:325px; margin:20px; margin-left: 200px; margin-top: 50px;" [src]="userData?.file">
+    </div>
+    
+        
+    <div>
+        <p style="margin-left:150px; font-size: medium;  margin-top:100px;">I'm {{userData?.fname}}{{userData?.lname}}
+           and I'm 
+            {{userData?.age}} years and you can send your new emails to
+            <br>{{userData?.mail}}, I live in the state of {{userData?.state}}.I like to play {{userData?.tags}}
+            .And
+            please send me news,
+            <br>please reach out to me  through   my  contact number {{userData?.mno}}.
+        </p><br><br>
+        <button style=" color: black;background-color:skyblue;border: 1px solid blue ;align-self: center; margin-left: 300px;" type="button" class="btn btn-warning" (click)="editProfile()"> Edit Profile</button>
+
+    </div>
+</div>
+
+   <!-- Footer -->
+   <footer  style="height:200px; background-color:skyblue; margin-top:100px; padding-bottom:80px;">
+    <div id="contacts" class="last"></div>
+    
+   <br>
+   <div style="display:flex; margin-left:360px;"><h5  style="color:white; text-align: left; font-size: medium;margin-top: 50px;">      enter email for more information           :       </h5>
+    
+    <input style="width:40%; border:2px solid blue;margin-top: 50px; background-color:white; color:white; " type="text"  placeholder="Enter your Email Address " ><br>
+   
+   
+   
+  
+   </div>
+   
+   </footer>
+
+   <footer>
+    <div id="contact" class="lastfoot">
+        <div>
+        <i style="width:40px; margin-left: 1220px; height:40px; background-color:white; color:blue;  font-size:2rem; " class="far fa-envelope"></i>
+         <input style="width: 10%;height: 40px; border:2px solid blue; " placeholder="enter email"></div>
+         <a href="#" class="fa fa-facebook">facebook</a>
+         <a href="#" class="fa fa-twitter">twitter</a>
+         <p style="margin-right: 1300px;color:cyan;">Copyright© 2014 Career</p>
+         
+        
+        
+      
+    </div>
+
+  </footer>

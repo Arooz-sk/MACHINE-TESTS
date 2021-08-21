@@ -1,0 +1,15 @@
+<div class="navbar" id="top">
+  <nav>
+    <ul style="display: flex;">
+      <li style="margin-top: 10PX;margin-right: 60PX;" class="navitem"><a routerLink="">DEMO </a></li>
+      <li style="margin-top: 10px; margin-left: 160px;" class="navitem"><a routerLink="">HOME</a></li>
+      <li style="margin-top: 10px;margin-right: 60px;" class="navitem" (click)="toAbout()">ABOUT US</li>
+      <li style="margin-top: 10px;margin-right: 60px" class="navitem">JOBS</li>
+      <li style="margin-top: 10px;margin-right: 60px" class="navitem">CLIENT</li>
+      <li style="margin-top: 10px;margin-right: 60px" class="navitem" (click)="toContact()">CONTACT US</li>
+    </ul>
+  </nav>
+</div>
+
+
+<router-outlet></router-outlet>

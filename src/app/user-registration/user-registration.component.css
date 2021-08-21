@@ -1,0 +1,39 @@
+body{
+    background-color:white;
+}
+.inputfile-1 + label {
+    color: blue;
+    background-color:white ;
+}
+
+
+
+
+  
+ 
+ 
+
+.inputfile {
+    visibility: hidden;
+}
+
+.inputfile + label {
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    margin-left: 16%;
+    
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+
+
