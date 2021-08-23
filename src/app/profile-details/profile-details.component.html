@@ -2,11 +2,12 @@
 
     <div class="profileimg">
         <img style="width:310px; height:325px; margin:20px; margin-left: 200px; margin-top: 50px;" [src]="userData?.file">
-    </div>
     
-        
+    
+    <button style="margin-left: 200px;" type="button" (click)="editProfile(1)"  class="btn btn-warning">Edit Picture</button>
+ </div>
     <div>
-        <p style="margin-left:150px; font-size: medium;  margin-top:100px;">I'm {{userData?.fname}}{{userData?.lname}}
+        <p style="margin-left:center; font-size: medium;  margin-top:100px;">I'm {{userData?.fname}}{{userData?.lname}}
            and I'm 
             {{userData?.age}} years and you can send your new emails to
             <br>{{userData?.mail}}, I live in the state of {{userData?.state}}.I like to play {{userData?.tags}}
@@ -14,8 +15,10 @@
             please send me news,
             <br>please reach out to me  through   my  contact number {{userData?.mno}}.
         </p><br><br>
-        <button style=" color: black;background-color:skyblue;border: 1px solid blue ;align-self: center; margin-left: 300px;" type="button" class="btn btn-warning" (click)="editProfile()"> Edit Profile</button>
-
+        <div>
+    <button  style="margin-left: 200px;color: black;background-color:skyblue;border: 1px solid blue ;" class="btn btn-warning" (click)="editProfile(2)">Edit Profile</button>
+        <button style=" color: black;background-color:skyblue;border: 1px solid blue ; margin-left: 350px;" type="button" class="btn btn-success" > I agreed</button>
+</div>
     </div>
 </div>
 
